@@ -1,0 +1,19 @@
+{
+  "name": "os-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": "git@github.com:ambessonov980/git-extended.git",
+  "author": "Andrei Bessonov <andrejbessonov310@gmail.com>",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "config": {
+  "commitizen": {
+    "path": "cz-conventional-changelog"
+  }
+}
+}

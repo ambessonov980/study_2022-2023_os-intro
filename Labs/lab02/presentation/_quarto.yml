@@ -10,8 +10,8 @@ crossref:
   lof-title: Список иллюстраций
   lot-title: Список таблиц
   lol-title: Листинги
-format: # Formats
-  beamer: # Pdf output format
+format:
+  beamer:
     toc: true
     toc-title: Содержание
     number-sections: false
@@ -24,11 +24,21 @@ format: # Formats
     navigation: horizontal
     csquotes: true
     indent: true
+    # Важно: переключаем движок на XeLaTeX (или LuaLaTeX)
+    pdf-engine: xelatex
+    # Указываем шрифты с поддержкой кириллицы
+    mainfont: Liberation Serif
+    sansfont: Liberation Sans
+    monofont: Liberation Mono
+    # Альтернативные шрифты (если Liberation не устраивают):
+    # mainfont: Times New Roman
+    # sansfont: Arial
+    # monofont: Courier New
     include-in-header:
       - file: _resources/tex/beamer.tex
     babel-lang: russian
     babel-otherlangs: english
-  revealjs: # Html output
+  revealjs:
     transition: slide
     margin: 0.2
     smaller: true
@@ -36,3 +46,5 @@ format: # Formats
     output-ext: html
     theme: beige
     logo: _resources/image/logo_rudn.png
+    # Для корректного отображения формул и спецсимволов
+    html-math-method: mathjax
